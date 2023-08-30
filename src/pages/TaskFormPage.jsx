@@ -3,7 +3,7 @@ import { useTasks } from "../context/TasksContext";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
-import dayjs from "dayjs/esm";
+import dayjs from "dayjs"; // /esm
 import utc from "dayjs/plugin/utc";
 dayjs.extend(utc);
 
