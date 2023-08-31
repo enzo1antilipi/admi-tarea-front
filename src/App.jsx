@@ -9,7 +9,7 @@ import { ProfilePage } from "./pages/ProfilePage";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { TaskProvider } from "./context/TasksContext";
 import { Navbar } from "./components/Navbar";
-
+//config agregar
 function App() {
   return (
     <AuthProvider>
