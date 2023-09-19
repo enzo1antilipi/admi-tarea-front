@@ -54,6 +54,11 @@ export const AuthProvider = ({ children }) => {
     setIsAuthenticated(false);
     setUser(null);
   };
+  // Después de autenticar al usuario y recibir el token desde el servidor
+  const token1 = Cookies.get("token");
+  console.log(token1);
+  // Establece la cookie con el token
+  Cookies.set("token", token1, { expires: 1 }); // 'expires' define la duración de la cookie en días
 
   useEffect(() => {
     if (errors.length > 0) {
